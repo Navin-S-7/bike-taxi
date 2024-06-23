@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/web.html#home -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Taxi Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #303030;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #0080ff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('bike_taxi.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 400px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            color: #000000;
+        }
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bike Taxi Service</h1><a href="https://play.google.com/store/search?q=rapido&c=apps"><img style="align-items: end;" src="https://www.digitaltrends.com/wp-content/uploads/2022/07/Google-Play-Logo-2022.jpg?fit=1500%2C1000&p=1" width="50" height="50"></a>
+    </header>
+    <nav>
+        <a href="http://127.0.0.1:5500/web.html#home">Home</a>
+        <a href="http://127.0.0.1:5500/web.html#services">Services</a>
+        <a href="http://127.0.0.1:5500/web.html#contact">Contact</a>
+    </nav>
+    <div style="background-image: url(https://beepkart.com/images/blogs/best-bikes.webp);" class="hero">
+        <h1>Fast &amp; Reliable Bike Taxi</h1>
+        <p>Get to your destination quickly and safely.</p>
+    </div>
+    <div style="background-image: url(https://inline4.in/wp-content/uploads/2022/06/banner.jpg); background-size:cover ;">
+    <div class="content" id="home">
+        <h2><mark>Welcome to Bike Taxi Service</mark></h2>
+        <p>We offer the best bike taxi services in town. Fast, reliable, and convenient.</p>
+    </div>
+    <div class="content" id="services">
+        <h2><mark>Our Services</mark></h2>
+        <p>We provide various bike taxi services to meet your needs. Whether you need a quick ride to work or a safe ride home, we've got you covered.</p>
+    </div>
+    <div class="content" id="contact">
+        <h2><mark>Contact Us</mark></h2>
+        <p>Email: info@biketaxi.com | Phone: 123-456-7890</p>
+    </div>
+</div>
+    <footer>
+        <p>© 2024 Bike Taxi Service. All rights reserved.</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
